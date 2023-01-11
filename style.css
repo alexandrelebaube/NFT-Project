@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Lufga-medium;
+  src: url("./font/Fontspring-DEMO-lufga-medium.otf");
+}
+@font-face {
+  font-family: Lufga-bold;
+  src: url("./font/Fontspring-DEMO-lufga-bold.otf");
+}
+@font-face {
+  font-family: Lufga-regular;
+  src: url("./font/Fontspring-DEMO-lufga-regular.otf");
+}
+body {
+  background-color: #08071a;
+  color: white;
+  font-family: Lufga-medium;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  margin: 0 150px;
+}
+.nav-menus {
+  display: flex;
+  list-style-type: none;
+}
+.nav-menus li {
+  padding-left: 40px;
+}
+.header-section {
+  display: flex;
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+}
+.header-img {
+  width: 50%;
+}
+.header-text {
+  width: 50%;
+  margin-right: 180px;
+  margin-left: 100px;
+}
+.header-text h2 {
+  font-size: 50px;
+  font-family: Lufga-bold;
+}
+hr {
+  background-color: #a851f1;
+  border: transparent;
+  height: 5px;
+  width: 300px;
+  border-radius: 30px;
+}
+.header-text p {
+  margin: 20px 0;
+  font-family: Lufga-regular;
+}
+.header-text button {
+  background-image: linear-gradient(to right, #5bc5d6, #6077ec, #a851f1);
+  padding: 13px 40px;
+  color: white;
+  border: transparent;
+  font-family: Lufga-regular;
+  font-size: 15px;
+  border-radius: 20px 0 20px;
+}
+.stars {
+  position: absolute;
+  right: 230px;
+  bottom: 310px;
+  height: 70px;
+}
+.down-arrow {
+  position: absolute;
+  height: 50px;
+  right: 220px;
+}
+@media only screen and (max-width: 1024px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+  }
+  .header-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 90%;
+    margin: auto;
+  }
+  .header-img {
+    width: 100%;
+    padding-left: 100px;
+  }
+  .header-img img {
+    width: 100vw;
+  }
+  .nav-menus {
+    display: none;
+  }
+  .header-text h2 {
+    font-size: 35px;
+  }
+}
