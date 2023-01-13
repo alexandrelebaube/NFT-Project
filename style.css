@@ -69,7 +69,7 @@ button {
   border: transparent;
   font-family: Lufga-regular;
   font-size: 15px;
-  border-radius: 20px 0 20px;
+  clip-path: polygon(10% 0%, 100% 0, 100% 70%, 90% 100%, 0 100%, 0% 30%);
 }
 .stars {
   position: absolute;
@@ -187,6 +187,9 @@ button {
 .NFT-life-img img {
   height: 400px;
 }
+.NFT-life-img {
+  margin: auto;
+}
 @media only screen and (max-width: 1200px) {
   .header-text {
     margin-right: 20px;
@@ -198,7 +201,8 @@ button {
     height: 290px;
   }
   .NFT-life-container {
-    margin: 0;
+    margin: auto;
+    width: 90%;
   }
   .NFT-life-text {
     margin-left: 0;
