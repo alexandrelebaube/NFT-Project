@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- This is the nav bar  -->
+    <nav class="flex justify-between h-24 items-center mx-[150px]">
+      <div>
+        <img src="./images/Group.svg" alt="" />
+      </div>
+      <div class="hidden sm:block">
+        <ul class="flex">
+          <li>Services</li>
+          <li class="mx-8">About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- This is the first section -->
+    <section
+      class="grid grid-cols-1 items-center sm:grid-cols-2 space-x-14 xl:space-x-24"
+    >
+      <div>
+        <img src="./images/Img-about-header.svg" alt="" />
+      </div>
+      <div>
+        <img
+          class="relative xl:top-10 xl:right-16 top-8 right-12"
+          src="./images/stars-icon-2.svg"
+          alt=""
+        />
+        <h1 class="text-[45px] font-bold">About US</h1>
+        <hr class="w-[140px] bg-[#a851f1] h-[5px] rounded border-none" />
+        <p class="mt-[20px] about-para xl:mr-[250px] mr-10">
+          A team of passionate designers and NFT enthusiasts. At your service.
+          Our clients call us “great artists and crazy-good NFT experts”.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
